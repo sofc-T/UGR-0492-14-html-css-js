@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About me</title>
+        <link rel="stylesheet" href="css/about_me.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -11,7 +17,7 @@
                 <figure>
                     <a href="Homepage.html"><img id="logo" src="image/Logo.png" alt="Logo"></a>
                 </figure>
-                <p>The Design Alchemist</p>
+                <p id="motto">The Design Alchemist</p>
                 
                 <ul>
                     <li><a href="Homepage.html">Home</a ></li>
@@ -20,13 +26,15 @@
                     <li><a href="About_me.html">About me</a ></li>
                     <li><a href="Contact_me.html">Contact me</a ></li>
                 </ul>
+                <img id="menu" src="image/list.png" alt="menu-button">
             </nav>
         </header>
         <main>
             <div class="mainFiles">
-                <div class="container"><p>Curious to explore more about who I am?<br> Here's a glimpse of my endeavors and passions.</p></div>
-                <div class="dropdowneach1">
-                    <button class="open">Travels</button>
+                <div class="desc">
+                    <p>Curious to explore more about who I am?<br> Here's a glimpse of my endeavors and passions.</p></div>
+                <div class="dropdowneach">
+                    <div class="control"><p class="open">Travels</p><img class="drop" src="image/down-arrow.png" alt="open drop down menu"></div>
                     <div class="hidden">
                         <figure class="gallery">
                             <img src="image/Travels/gorilla.jfif" alt="gallery1">
@@ -35,8 +43,8 @@
                         </figure>
                     </div>
                 </div>
-                <div class="dropdowneach2">
-                    <button class="open">Community Work</button>
+                <div class="dropdowneach">
+                    <div class="control"><p class="open">Community Work</p><img class="drop" src="image/down-arrow.png" alt="open drop down menu"></div>
                     <div class="hidden">
                         <figure class="gallery">
                             <img src="image/com/comu1.jpg" alt="gallery1">
@@ -46,19 +54,19 @@
                         </figure>
                     </div>
                 </div>
-                <div class="dropdowneach3">
-                    <button class="open">Fitness</button>
+                <div class="dropdowneach">
+                    <div class="control"><p class="open">Fitness</p><img class="drop" src="image/down-arrow.png" alt="open drop down menu"></div>
                     <div class="hidden">
                         <figure class="gallery">
-                            <img src="image/gym/gym1.jpg" alt="gallery1">
-                            <img src="image/gym/gym2.jpg" alt="gallery1">
+                            <img src="image/New folder/gym1.jpg" alt="gallery1">
+                            <img src="image/New folder/gym2.jpg" alt="gallery1">
                         </figure>
                     </div>
                 </div>
             </div>
         </main>
         <footer class="portfolio-footer">
-            <div class="container">
+            <div class="footercontainer">
               <div class="footer-content">
                 <h3>Contact</h3>
                 <p>Email:Sofstzz@gmail.com</p>
@@ -67,11 +75,12 @@
               <div class="footer-content">
                 <h3>Follow Me</h3>
                 <ul class="social-links">
-                  <li><a href="https://t.me/sofstzz" target="_blank"><img src="image/icons/teleg.jpg" alt="tg_icon"> <i class="tg"></i></a ></li>
-                  <li><a href= "https://twitter.com/abebegellaw" target="_blank"><i class="x"><img src = "image/icons/x.jpg" alt="x-icon"></i></a></li>
+                  <li><a href="https://t.me/sofstzz" target="_blank"><img clas="drop" src="image/icons/teleg.png" alt="tg_icon"> <i class="tg">@Sofstzz</i></a ></li>
+                  <li><a href= "https://twitter.com/abebegellaw" target="_blank"><i class="x"><img src = "image/icons/x.png" alt="x-icon">@Sof</i></a></li>
                 </ul>
               </div>
             </div>
+            <p id="copyp">Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright">2023 Reserved.</p>
         </footer>
     </body>
 </html>

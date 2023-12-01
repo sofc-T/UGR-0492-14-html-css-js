@@ -3,7 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact me</title>
+        <title>Desings</title>
+        <link rel="stylesheet" href="css/contact_me.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -11,7 +18,7 @@
                 <figure>
                     <a href="Homepage.html"><img id="logo" src="image/Logo.png" alt="Logo"></a>
                 </figure>
-                <p>The Design Alchemist</p>
+                <p id="motto">The Design Alchemist</p>
                 
                 <ul>
                     <li><a href="Homepage.html">Home</a ></li>
@@ -20,48 +27,35 @@
                     <li><a href="About_me.html">About me</a ></li>
                     <li><a href="Contact_me.html">Contact me</a ></li>
                 </ul>
+                <img id="menu" src="image/list.png" alt="menu-button">
             </nav>
         </header>
         <main>
-            <div class="container"><p>Sth goes here</p></div>
-            <div class="mainfile">
+            <div class="container"><p>Let's Connect! I'm thrilled that you're interested in getting in touch with me. Whether you have a question, a collaboration opportunity, or just want to say hello, I'm all ears!</p></div>
                 <div class="mail">
-                    <form action="mailto:sofstzz@gmail.com" method="POST" enctype="text/plain">
+                    <form id="mailhere" action="mailto:sofstzz@gmail.com" method="POST" enctype="text/plain">
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                        <input type="submit" value="Send Email">
+                        <input id="message" name="message" placeholder="Enter your message" required>
+                        <input id="button" type="submit"  value="Send Email">
                     </form>
                 </div>
-                <div class="socialmedias">
-                    <div class="socialmediaeach">
-                        <figure>
-                            <a><img class="icon" alt="icon" src = "image/icons/teleg.jpg">Telegram</a>
-                        </figure>
-                    </div>
-                    <div class="socialmediaeach">
-                        <figure>
-                            <a><img class="icon" alt="icon" src = "image/icons/x.jpg">X</a>
-                        </figure>
-                    </div>
-                </div>
-            </div>
         </main>
-    
         <footer class="portfolio-footer">
-            <div class="container">
-            <div class="footer-content">
+            <div class="footercontainer">
+              <div class="footer-content">
                 <h3>Contact</h3>
                 <p>Email:Sofstzz@gmail.com</p>
                 <p>Phone:+251935573030</p>
-            </div>
-            <div class="footer-content">
+              </div>
+              <div class="footer-content">
                 <h3>Follow Me</h3>
                 <ul class="social-links">
-                <li><a href="https://t.me/sofstzz" target="_blank"><img src="image/icons/teleg.jpg" alt="tg_icon"> <i class="tg"></i></a ></li>
-                <li><a href= "https://twitter.com/abebegellaw" target="_blank"><i class="x"><img src = "image/icons/x.jpg" alt="x-icon"></i></a></li>
+                  <li><a href="https://t.me/sofstzz" target="_blank"><img clas="drop" src="image/icons/teleg.png" alt="tg_icon"> <i class="tg">@Sofstzz</i></a ></li>
+                  <li><a href= "https://twitter.com/abebegellaw" target="_blank"><i class="x"><img src = "image/icons/x.png" alt="x-icon">@Sof</i></a></li>
                 </ul>
+              </div>
             </div>
-            </div>
+            <p id="copyp">Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright">2023 Reserved.</p>
         </footer>
     </body>
 </html>

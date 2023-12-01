@@ -1,0 +1,124 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:content-box;
+    font-family:'Noto Sans Georgian', sans-serif;
+    font-size:large;
+}
+
+:root{
+    --main:aqua;
+    --lmain:rgb(102, 247, 247);
+    --comp:rgb(255, 102, 0);
+    --llmain:rgb(186, 246, 246);
+    --llcomp:rgb(251, 181, 135);
+    --lcomp:rgb(251, 140, 66);
+}
+
+nav{
+    background-color:white;
+    display:flex;
+    position:fixed;
+    top:0;
+    width:100%;
+    justify-content:space-around;
+    border-bottom:4px solid var(--comp);
+    z-index:1;
+
+}
+#logo{
+    width:9rem;
+}
+
+
+nav p {
+    font-size:3rem;
+    text-align: center;
+    font-family:'Noto Sans Georgian', sans-serif;
+    
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+li{
+    margin:0.2rem;
+    font-size:1.6rem;
+}
+#motto{
+    padding:0;
+    padding-top:20px;
+    color:var(--comp);
+    font-family: 'Allura', cursive;
+}
+#menu{
+    padding:2rem;
+    width:3rem;
+    height:3rem;
+    display: none;   
+}
+.container{
+    margin-top:360px;
+    
+}
+.container {
+    margin-top: 360px;
+  }
+  
+  main p,
+  .mail {
+    margin: 3rem;
+  }
+  #button {
+    background: linear-gradient(to right, var(--main), var(--comp));
+  }
+p, .mail{
+    margin:3rem;
+}
+.mail{
+    display:flex;
+    flex-direction:column;
+}
+
+#button{
+    background:linear-gradient(to right,var(--main),var(--comp));
+}
+footer{
+    background-color:var(--lcomp);
+    margin-top:8rem;
+    padding-top:2rem;
+    margin-bottom:0.4rem;
+}
+.footercontainer{
+    
+    display:flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
+
+.footer-content ul{
+    list-style-type:none;
+}
+.footer-content h3, .footer-content p{
+    margin:0;
+}
+.footer-content img{
+    width:1.5rem;
+}
+#copyp{
+    padding-bottom:1rem;
+    text-align: center;
+}
+#copy{
+    width:1rem;
+}
+@media (max-width:881px){
+    nav ul{
+        display:none;
+    }
+    #menu{
+        display:block;
+    }
+}
