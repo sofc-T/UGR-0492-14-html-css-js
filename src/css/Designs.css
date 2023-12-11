@@ -69,8 +69,9 @@ h2{
 }
 p{
     margin-left: 2rem;
+    
 }
-.designs{
+.container_designs{ 
     margin-top:50px;
 }
 .designEach{
@@ -80,11 +81,27 @@ p{
 .designEach button{
     background:linear-gradient(to right,var(--main),var(--comp));
 }
+nav a, .footer-content li a{
+    color:var(--main);
+    text-decoration: none;
+}
+nav a:hover, nav a:active, .footer-content li a:hover, .footer-content li a:active{
+    color:var(--comp);
+    text-decoration:underline;
+}
+.container p{
+    padding:0.4rem;
+    background-color: var(--llmain);
+    border-radius:12px;
+    margin:4px;
+    border:2px solid var(--lcomp);
+}
 footer{
-    background-color:var(--lcomp);
+    background-color:var(--llmain);
     margin-top:8rem;
     padding-top:2rem;
     margin-bottom:0.4rem;
+    border-top:solid 0.2rem var(--comp);
 }
 .footercontainer{
     
@@ -106,11 +123,111 @@ footer{
 #copy{
     width:1rem;
 }
-@media (max-width:881px){
+@media (max-width:580px){
     nav ul{
         display:none;
     }
     #menu{
         display:block;
+    }
+    #motto{
+        font-size:2rem;
+    }
+    
+    #menu{
+        width:3rem;
+        height:1.5rem;
+    }
+    #logo{
+        width:4rem;
+        height:3rem;
+        margin-top:2rem;
+    }
+    nav{
+        position:relative;
+    }
+    main{
+        padding-top:0;
+    }
+    #name{
+        margin-top:0.8rem;
+    }
+    .container{
+        margin-top:2rem;
+    }
+}
+@media (min-width:581px) and (max-width:1200px){
+    .fl{display:grid;
+        grid-template-areas:
+        a1 a2
+        a3 a4
+        a4 a5;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+    }
+    .designEach img{
+        width:100%;
+        height:16rem;
+    }
+    .designEach{
+        margin:10px;
+    }
+    nav ul{
+        display:none;
+    }
+    #menu{
+        display:block;
+    }
+    .container{
+        margin-top:12rem;
+    }
+}
+@media (min-width:1201px){
+    .fl{display:grid;
+        grid-template-areas:
+        a1 a2 a3
+        a2 a4 a5;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+    .designEach img{
+        width:100%;
+        height:16rem;
+    }
+    .designEach{
+        margin:10px;
+    }
+    nav ul{
+        margin-top:1.6rem;
+    }
+}
+@media(orientation:landscape){
+
+}
+@media (max-width:800px)and (orientation:landscape){
+    nav ul{
+        display:none;
+    }
+    #menu{
+        display:block;
+    }
+    #motto{
+        font-size:2rem;
+    }
+    
+    #menu{
+        width:3rem;
+        height:1.5rem;
+    }
+    #logo{
+        width:4rem;
+        height:3rem;
+        margin-top:2rem;
+    }
+    nav{
+        position:relative;
+    }
+    main{
+        padding-top:0;
     }
 }
