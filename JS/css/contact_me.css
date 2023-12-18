@@ -221,7 +221,7 @@ footer{
         margin-top:2rem;
     }
 }
-@media(max-width:1201px){
+@media(min-width:1201px){
     nav ul{
         display:block;
     }

@@ -339,6 +339,9 @@ footer{
         margin-top:0;
         margin-bottom:0;
     }
+    nav ul{
+        display:none;
+    }
 }
 @media (max-width:800px)and (orientation:landscape){
     nav ul{
@@ -369,8 +372,9 @@ footer{
     #name{
         margin-top:0.8rem;
     }
+
 }
-@media(max-width:1201px){
+@media(mix-width:1201px){
     nav ul{
         display:block;
     }

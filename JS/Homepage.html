@@ -3,7 +3,7 @@
     <head>        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sof</title>
+        <title>Sof - The Desing Alchemist</title>
         <link rel="stylesheet" href="css/home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
+        <script src="Js/Home.js"></script>
+        <link rel="icon" type="image/x-icon" href="image/Logo.png">
     </head>
     <body>
     <header>
@@ -123,63 +125,6 @@
             <p id="copyp">Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright">2023 Reserved.</p>
         </footer>
     </body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const slideshowContainer = document.getElementById('slideshowContainer');
-            const slides = document.querySelectorAll('#slideshowContainer img');
-            const totalSlides = slides.length;
-            const cloneSlides = Array.from(slides).map(slide => slide.cloneNode(true));
-    
-            
-            cloneSlides.forEach(cloneSlide => {
-                slideshowContainer.appendChild(cloneSlide);
-            });
-    
-            let currentIndex = 0;
-    
-            function showSlide(index) {
-                slides.forEach((slide, i) => {
-                    slide.style.transform = `translateX(${(i - index) * 100}%)`;
-                });
-            }
-    
-            function nextSlide() {
-                currentIndex = (currentIndex + 2) % totalSlides;
-                showSlide(currentIndex);
-            }
-    
-            function prevSlide() {
-                currentIndex = (currentIndex - 2 + totalSlides) % totalSlides;
-                showSlide(currentIndex);
-            }
-    
-            showSlide(currentIndex);
-    
-            document.getElementById('cont1').addEventListener('click', prevSlide);
-            document.getElementById('cont2').addEventListener('click', nextSlide);
-    
-            
-            setInterval(nextSlide, 3000);
-        });
-        document.addEventListener('DOMContentLoaded', function() {
-            var menuButton = document.getElementById('menu');
-            var navLinks = document.querySelector('nav ul');
 
-            menuButton.addEventListener('click', function() {
-                if (navLinks.style.display === 'none' || navLinks.style.display === '') {
-                    navLinks.style.display = 'block';
-                } else {
-                    navLinks.style.display = 'none';
-                }
-            });
-
-            document.addEventListener('click', function(event) {
-                var target = event.target;
-                if (target !== menuButton && !navLinks.contains(target)) {
-                    navLinks.style.display = 'none';
-                }
-            });
-        });
-    </script>
     
 </html>
