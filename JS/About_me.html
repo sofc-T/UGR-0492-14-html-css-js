@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About me</title>
+        <link rel="stylesheet" href="css/about_me.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <figure>
+                    <a href="Homepage.html"><img id="logo" src="image/Logo.png" alt="Logo"></a>
+                </figure>
+                <p id="motto">The Design Alchemist</p>
+                
+                <ul>
+                    <li><a href="Homepage.html">Home</a ></li>
+                    <li><a href="Desings.html">Designs</a ></li>
+                    <li><a href="Background.html">Background</a ></li>
+                    <li><a href="About_me.html">About me</a ></li>
+                    <li><a href="Contact_me.html">Contact me</a ></li>
+                </ul>
+                <img id="menu" src="image/list.png" alt="menu-button">
+            </nav>
+        </header>
+        <main>
+            <div class="mainFiles">
+                <div class="main_desc"> 
+                    <p>Curious to explore more about who I am?<br> Here's a glimpse of my endeavors and passions.</p></div>
+                <div class="main_dropdowneach">
+                    <div class="main_control"><p class="main_control-open">Travels</p><img class="drop" src="image/down-arrow.png" alt="open drop down menu"></div>
+                    <div class="hidden">
+                        <figure class="gallery">
+                            <img src="image/Travels/gorilla.jfif" alt="gallery1">
+                            <img src="image/Travels/lake.jfif" alt="gallery1">
+                            <img src="image/Travels/mountain.jpg" alt="gallery1">
+                        </figure>
+                    </div>
+                </div>
+                <div class="main_dropdowneach">
+                    <div class="main_control"><p class="main_control-open">Community Work</p><img class="drop" src="image/down-arrow.png" alt="open drop down menu"></div>
+                    <div class="hidden">
+                        <figure class="gallery">
+                            <img src="image/com/comu1.jpg" alt="gallery1">
+                            <img src="image/com/comu2.jpg" alt="gallery1">
+                            <img src="image/com/comu3.jpg" alt="gallery1">
+                            <video src="image/A2SV - G5 Education Kickoff.mp4" controls>Your borwser cannot play the video.</video>
+                        </figure>
+                    </div>
+                </div>
+                <div class="main_dropdowneach">
+                    <div class="main_control"><p class="main_control-open">Fitness</p><img class="drop" src="image/down-arrow.png" alt="open drop down menu"></div>
+                    <div class="hidden">
+                        <figure class="gallery">
+                            <img src="image/New folder/gym1.jpg" alt="gallery1">
+                            <img src="image/New folder/gym2.jpg" alt="gallery1">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="portfolio-footer">
+            <div class="footercontainer">
+              <div class="footer-content">
+                <h3>Contact</h3>
+                <p>Email:Sofstzz@gmail.com</p>
+                <p>Phone:+251935573030</p>
+              </div>
+              <div class="footer-content">
+                <h3>Follow Me</h3>
+                <ul class="social-links">
+                  <li><a href="https://t.me/sofstzz" target="_blank"><img clas="drop" src="image/icons/teleg.png" alt="tg_icon"> <i class="tg">@Sofstzz</i></a ></li>
+                  <li><a href= "https://twitter.com/abebegellaw" target="_blank"><i class="x"><img src = "image/icons/x.png" alt="x-icon">@Sof</i></a></li>
+                </ul>
+              </div>
+            </div>
+            <p id="copyp">Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright">2023 Reserved.</p>
+        </footer>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var controlItems = document.querySelectorAll('.main_control');
+
+            controlItems.forEach(function(controlItem) {
+                controlItem.addEventListener('click', function() {
+                    var allHiddenElements = document.querySelectorAll('.main_dropdowneach .hidden');
+                    allHiddenElements.forEach(function(hiddenElement) {
+                        hiddenElement.style.display = 'none';
+                    });
+
+                    var hiddenElement = controlItem.parentElement.querySelector('.hidden');
+                    if (hiddenElement.style.display === 'none' || hiddenElement.style.display === '') {
+                        hiddenElement.style.display = 'block';
+                    } else {
+                        hiddenElement.style.display = 'none';
+                    }
+                });
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuButton = document.getElementById('menu');
+            var navLinks = document.querySelector('nav ul');
+
+            menuButton.addEventListener('click', function() {
+                if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                    navLinks.style.display = 'block';
+                } else {
+                    navLinks.style.display = 'none';
+                }
+            });
+
+            document.addEventListener('click', function(event) {
+                var target = event.target;
+                if (target !== menuButton && !navLinks.contains(target)) {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</html>
