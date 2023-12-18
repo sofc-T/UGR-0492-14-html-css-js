@@ -3,7 +3,7 @@
     <head>        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sof</title>
+        <title>Sof - The Desing Alchemist</title>
         <link rel="stylesheet" href="css/home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display&family=Noto+Sans+Georgian:wght@200;400&display=swap" rel="stylesheet">
+        <script src="Js/Home.js"></script>
+        <link rel="icon" type="image/x-icon" href="image/Logo.png">
     </head>
     <body>
     <header>
@@ -25,7 +27,7 @@
                 <li><a href="Desings.html">Designs</a ></li>
                 <li><a href="Background.html">Background</a ></li>
                 <li><a href="About_me.html">About Me</a ></li>
-                <li><a href="Contact_me.html">Contact</a ></li>
+                <li><a href="Contact_me.html">Contact Me</a ></li>
             </ul>
         </nav>
     </header>
@@ -39,15 +41,19 @@
             <img src="image/previous.png" alt="prev" class="slideshow_cont" id="cont1">
             <figure class="mid">
                 <a href="Desings.html">
-                    <div class="flexcolumn">
+                    <div class="flexcolumn" id="slideshowContainer">
                         <img src="image/desing/d2.png" alt="Sample 2">
-                        <!-- <img src="image/desing/d3.png" alt="Sample 3">
-                        <img src="image/desing/d4.png" alt="Sample 4">         -->
+                        <img src="image/desing/d3.png" alt="Sample 3">
+                        <img src="image/desing/d4.png" alt="Sample 4">
+                        <img src="image/desing/d4.png" alt="Sample 4">
+                        <img src="image/desing/d4.png" alt="Sample 4">
+                        <img src="image/desing/d4.png" alt="Sample 4">
                     </div>
                 </a>
-            </figure> 
+            </figure>
             <img src="image/next.png" alt="next" class="slideshow_cont" id="cont2">
         </div>
+        
             <div class="butt">
             <a href="Desings.html"><button id="check">Check Out More Designs</button></a ></div>
         </main>
@@ -67,19 +73,19 @@
             <h2>Check Some of my Works</h2>
             <figure class = "des">
                 <div class="designEach">
-                    <img src="image/desing/d6.png" alt="D1">
+                <a href="Desings.html"><img src="image/desing/d6.png" alt="D1"></a>
                     <button class="buy">Buy</button>
                 </div>
                 <div class="designEach">
-                    <img src="image/desing/d5.png" alt="D2">
+                    <a href="Desings.html"><img src="image/desing/d5.png" alt="D1"></a>
                     <button class="free">Free</button>
                 </div>
                 <div class="designEach">
-                    <img src="image/desing/d1.png" alt="D3">
+                    <a href="Desings.html"><img src="image/desing/d1.png" alt="D1"></a>
                     <button class="free">Free</button>
                 </div>
                 <div class="designEach">
-                    <img src="image/desing/d2.png" alt="D4">
+                    <a href="Desings.html"><img src="image/desing/d2.png" alt="D1"></a>
                     <button class="buy">Buy</button>
                 </div>
             </figure>
@@ -119,4 +125,6 @@
             <p id="copyp">Copyright<img id="copy" src="image/icons/copyright.png" alt="copyright">2023 Reserved.</p>
         </footer>
     </body>
+
+    
 </html>

@@ -25,12 +25,17 @@ nav{
     justify-content:space-around;
     border-bottom:4px solid var(--comp);
     z-index:1;
-
+img:hover{
+    border:2px solid var(--comp);
+}
 }
 #logo{
+    border:none;
     width:9rem;
 }
-
+img:hover{
+    border:2px solid var(--comp);
+}
 
 nav p {
     font-size:3rem;
@@ -58,6 +63,7 @@ li{
     width:3rem;
     height:3rem;
     display: none;   
+    border:none;
 }
 .container{
     margin-top:10rem;
@@ -229,5 +235,10 @@ footer{
     }
     main{
         padding-top:0;
+    }
+}
+@media(min-width:1201px){
+    nav ul{
+        display:block;
     }
 }

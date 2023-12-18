@@ -38,8 +38,12 @@ h2{
     font-family: 'Allura', cursive;
     
 }
+img:hover{
+    border:2px solid var(--comp);
+}
 #logo{
     width:9rem;
+    border:none;
 } 
 
 nav p {
@@ -147,6 +151,37 @@ aside{
 .testimonials_tests{
     display:flex;
     flex-direction:column;
+}
+.slideshow {
+    position: relative;
+    
+    margin: auto;
+}
+
+.flexcolumn {
+    display: flex;
+    overflow: hidden;
+}
+
+.flexcolumn img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.slideshow_cont {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#cont1 {
+    left: 0;
+}
+
+#cont2 {
+    right: 0;
 }
 .testimonials_testimonials_tests-each img{
     border-radius: 45%;
@@ -267,7 +302,8 @@ footer{
 @media(min-width:1201px){
     nav ul{
         margin-top:1.6rem;
-    } 
+    }
+    
     .des{
         display:grid;
         grid-template-columns:1fr 1fr;
@@ -303,6 +339,9 @@ footer{
         margin-top:0;
         margin-bottom:0;
     }
+    nav ul{
+        display:none;
+    }
 }
 @media (max-width:800px)and (orientation:landscape){
     nav ul{
@@ -332,5 +371,11 @@ footer{
     }
     #name{
         margin-top:0.8rem;
+    }
+
+}
+@media(mix-width:1201px){
+    nav ul{
+        display:block;
     }
 }

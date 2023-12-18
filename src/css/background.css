@@ -15,7 +15,9 @@
     --llcomp:rgb(251, 181, 135);
     --lcomp:rgb(251, 140, 66);
 }
-
+img:hover{
+    border:2px solid var(--comp);
+}
 nav{
     background-color:white;
     display:flex;
@@ -29,6 +31,7 @@ nav{
 }
 #logo{
     width:9rem;
+    border:none;
 }
 
 
@@ -227,5 +230,10 @@ footer{
     }
     .container p{
         margin-top:2.4rem;
+    }
+}
+@media(min-width:1201px){
+    nav ul{
+        display:block;
     }
 }
